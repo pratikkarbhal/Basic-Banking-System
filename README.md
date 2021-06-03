@@ -1,6 +1,6 @@
 #GRIPMAY21  ,  #TSF  ,  #THE SPARKS FOUNDATION  ,  #TASK 1 , #Pratik_Karbhal
 
-# basic-banking-system-project problem statement
+# basic-banking-system problem statement
 
 Basic-banking-system Basic Banking System 
 ◇ Create a simple dynamic website which has the following specs. 
