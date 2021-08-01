@@ -1,4 +1,9 @@
-# *Problem statement
+# Results
+
+![Website screens](Screens.gif)
+
+
+# Problem statement
 Basic-banking-system
 
 ◇ Create a simple dynamic website which has the following specs. 
@@ -9,10 +14,3 @@ Basic-banking-system
 ◇ Flow: (Index.html)Home Page > View all Customers > Select and View one Customer > Transfer Money > Select customer to transfer to > View all Customers . 
 
 ◇ No Login Page. No User Creation. Only transfer of money between multiple users.
-
-
-# *Results
-
-![Website screens](Screens.gif)
-
-#by pratik karbhal
