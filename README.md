@@ -9,3 +9,4 @@ Basic-banking-system Basic Banking System
 	Transfers table will record all transfers happened. 
 ◇ Flow: (Index.html)Home Page > View all Customers > Select and View one Customer > Transfer Money > Select customer to transfer to > View all Customers . 
 ◇ No Login Page. No User Creation. Only transfer of money between multiple users.
+Screens.gif
