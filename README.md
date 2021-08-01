@@ -1,4 +1,4 @@
-#GRIPJUNE21  ,  #TSF  ,  #THE SPARKS FOUNDATION  ,  #TASK 1 , #Pratik_Karbhal
+#Pratik_Karbhal
 
 # basic-banking-system problem statement
 
