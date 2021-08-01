@@ -1,6 +1,4 @@
-#Pratik_Karbhal
-
-# *basic-banking-system problem statement
+# *Problem statement
 
 Basic-banking-system
 
@@ -18,3 +16,5 @@ Basic-banking-system
 # *Results
 
 ![Website screens](Screens.gif)
+
+# by pratik karbhal
