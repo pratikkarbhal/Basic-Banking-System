@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Basic Banking by Pratik Karbhal</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">💰BANK</a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="customer list.html">Users</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About us</a>
+                    </li>
+                </ul>
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+	<br>
+	<br>
+	<br>
+	<h1><b><center>Recent transactions</center></b></h1>
+	<br>
+	<br>
+
+  </section>
+
+
+  <section id="main" class="coloured-section">
+
+    <!--Modal Send Money-->
+    <div class="modal fade" id="sendMoney" tableindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="input-group mb-3">
+                <input type="text" id="enterSName" class="form-control" placeholder="Sender's Username" aria-label="Sender's Username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" id="enterName" class="form-control" placeholder="Recipient's Username" aria-label="Recipient's Username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">₹</span>
+                </div>
+                <input type="text" id="enterAmount" class="form-control" placeholder="Enter Amount" aria-label="Amount">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal">Send Money</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal Transaction History-->
+    <div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ol id="transaction-history-body">
+
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Table-->
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered">
+<tr valign=top>
+<td style="border-style: inset;" bgcolor= grey>
+<p><span class=rvts1><b>Sender Name</b></span></p>
+</td>
+<td style="border-style: inset;" bgcolor= grey>
+<p><span class=rvts1><b>Receiver's Email</b></span></p>
+</td>
+<td style="border-style: inset;" bgcolor= grey>
+<p><span class=rvts1><b>Amount</b></span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Jared Thomas</p>
+</td>
+<td style="border-style: inset;">
+<p><a class=rvts4 href="mailto:j.thomas@randatmail.com" title="Click here!">j.thomas@randatmail.com</a></p>
+</td>
+<td style="border-style: inset;">
+<p>$499</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>Samantha Warren</p>
+</td>
+<td style="border-style: inset;">
+<p><a class=rvts4 href="mailto:s.warren@randatmail.com" title="Click here!">s.warren@randatmail.com</a></p>
+</td>
+<td style="border-style: inset;">
+<p>$99</p>
+</td>
+</tr>
+</table>
+</div>
+     
+    </div>
+
+    <footer class="white-section" id="footer">
+      <div class="container-fluid">
+        <i class="social-icon fab fa-facebook fa-2x"></i>
+        <i class="social-icon fab fa-twitter fa-2x"></i>
+        <i class="social-icon fab fa-instagram fa-2x"></i>
+        <i class="social-icon fab fa-linkedin fa-2x"></i>
+        <br>
+        <br>
+        <p><center>Made with ❤ by Pratik Karbhal</center></p>
+      </div>
+    </footer>
+
+  </section>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+</body>
+</html>
